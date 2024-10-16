@@ -1,0 +1,147 @@
+body {
+  background: whitesmoke;
+}
+.nav {
+  height: 60px;
+  display: flex;
+}
+.nav picture img {
+  margin: 10px;
+  height: 50px;
+  width: 55px;
+  border-radius: 50%;
+  position: relative;
+  top: -8px;
+}
+.nav h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  position: relative;
+  top: -10px;
+}
+.image-display {
+  width: 800px;
+  height: 430px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: url(gate.jpg);
+  margin: auto;
+  margin-top: 30px;
+  animation: image_changer 10s alternate-reverse 5s infinite;
+}
+@keyframes image_changer {
+  100% {
+    background: url(pool.jpg);
+  }
+}
+.image-display .left {
+  float: left;
+  width: 100px;
+  height: 425px;
+  background: gray;
+  opacity: 0.4;
+}
+.image-display .right {
+  float: right;
+  width: 100px;
+  height: 425px;
+  background: gray;
+  opacity: 0.5;
+}
+.image-display .right,
+.image-display .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-display img {
+  height: 40px;
+}
+.info-section {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.info-section .info,
+.info-section .contacts {
+  border: 2px solid black;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 20px;
+}
+.info-section .contacts div,
+.info-section .info div {
+  width: 100%;
+  margin: 10px;
+}
+.info-section .contacts div span,
+.info-section .info div span {
+  position: relative;
+  top: 8px;
+}
+h2 {
+  position: relative;
+  left: 400px;
+}
+.vacant-rooms {
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.room {
+  border: 2px solid black;
+  height: 300px;
+  width: 800px;
+  border-radius: 10px;
+  display: flex;
+  margin: 15px;
+}
+.room .image {
+  width: 30%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.room .image img {
+  height: 300px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+}
+.room .room-info {
+  height: 300px;
+  width: 70%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.room .room-info .essentials {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.room .room-info .essentials div {
+  width: 100%;
+  margin: 10px;
+}
+.room .room-info .essentials div img {
+  position: relative;
+  top: 6px;
+  margin-right: 5px;
+}
+.price {
+  margin-top: 20px;
+}
+strong {
+  font-size: x-large;
+}
+.slogan {
+  position: relative;
+  top: 50px;
+}
