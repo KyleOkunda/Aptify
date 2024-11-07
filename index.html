@@ -238,5 +238,15 @@
         </div>
       </section>
     </div>
+
+    <script>
+      var audio = new Audio("soothing.mp3");
+      var body = document.getElementsByTagName("body")[0];
+      body.addEventListener("mouseover", () => {
+        audio.play();
+        audio.loop = true;
+        audio.volume = 0.2;
+      });
+    </script>
   </body>
 </html>
